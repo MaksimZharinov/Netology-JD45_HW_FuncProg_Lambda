@@ -17,5 +17,11 @@ public class Main {
 
 //        Программа кидает ошибку типа ArithmeticException, т.к.
 //        в переменной b получается ноль, а на ноль делить нельзя
+
+        OnTaskDoneListener listenerDone = System.out::println;
+        OnTaskErrorListener listenerError = System.out::println;
+        Worker worker = new Worker(listenerDone, listenerError);
+
+        worker.start();
     }
 }
