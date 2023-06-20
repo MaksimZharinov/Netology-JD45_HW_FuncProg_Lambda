@@ -10,7 +10,7 @@ public class Main {
             int c = calc.devide.apply(a, b);
             calc.println.accept(c);
         } catch (ArithmeticException e) {
-            System.out.println("На ноль делить нельзя!");
+            System.out.println("Ошибка: на ноль делить нельзя!");
         } catch (Exception e) {
             System.out.println("Общий обработчик исключений.");
         }
